@@ -30,7 +30,7 @@
     }
   },
   "entities": {
-    "user11-webapp": {
+    "address": {
       "source": {
         "object": "SalesLT.Address",
         "type": "table"
@@ -38,8 +38,242 @@
       "graphql": {
         "enabled": true,
         "type": {
-          "singular": "user11-webapp",
-          "plural": "user11-webapps"
+          "singular": "address",
+          "plural": "addresses"
+        }
+      },
+      "rest": {
+        "enabled": true
+      },
+      "permissions": [
+        {
+          "role": "anonymous",
+          "actions": [
+            {
+              "action": "*"
+            }
+          ]
+        }
+      ]
+    },
+    "customer": {
+      "source": {
+        "object": "SalesLT.Customer",
+        "type": "table"
+      },
+      "graphql": {
+        "enabled": true,
+        "type": {
+          "singular": "customer",
+          "plural": "customers"
+        }
+      },
+      "rest": {
+        "enabled": true
+      },
+      "permissions": [
+        {
+          "role": "anonymous",
+          "actions": [
+            {
+              "action": "*"
+            }
+          ]
+        }
+      ]
+    },
+    "customeraddress": {
+      "source": {
+        "object": "SalesLT.CustomerAddress",
+        "type": "table"
+      },
+      "graphql": {
+        "enabled": true,
+        "type": {
+          "singular": "customeraddress",
+          "plural": "customeraddresses"
+        }
+      },
+      "rest": {
+        "enabled": true
+      },
+      "permissions": [
+        {
+          "role": "anonymous",
+          "actions": [
+            {
+              "action": "*"
+            }
+          ]
+        }
+      ]
+    },
+    "product": {
+      "source": {
+        "object": "SalesLT.Product",
+        "type": "table"
+      },
+      "graphql": {
+        "enabled": true,
+        "type": {
+          "singular": "product",
+          "plural": "products"
+        }
+      },
+      "rest": {
+        "enabled": true
+      },
+      "permissions": [
+        {
+          "role": "anonymous",
+          "actions": [
+            {
+              "action": "*"
+            }
+          ]
+        }
+      ]
+    },
+    "productcategory": {
+      "source": {
+        "object": "SalesLT.ProductCategory",
+        "type": "table"
+      },
+      "graphql": {
+        "enabled": true,
+        "type": {
+          "singular": "productcategory",
+          "plural": "productcategories"
+        }
+      },
+      "rest": {
+        "enabled": true
+      },
+      "permissions": [
+        {
+          "role": "anonymous",
+          "actions": [
+            {
+              "action": "*"
+            }
+          ]
+        }
+      ]
+    },
+    "productdescription": {
+      "source": {
+        "object": "SalesLT.ProductDescription",
+        "type": "table"
+      },
+      "graphql": {
+        "enabled": true,
+        "type": {
+          "singular": "productdescription",
+          "plural": "productdescriptions"
+        }
+      },
+      "rest": {
+        "enabled": true
+      },
+      "permissions": [
+        {
+          "role": "anonymous",
+          "actions": [
+            {
+              "action": "*"
+            }
+          ]
+        }
+      ]
+    },
+    "productmodel": {
+      "source": {
+        "object": "SalesLT.ProductModel",
+        "type": "table"
+      },
+      "graphql": {
+        "enabled": true,
+        "type": {
+          "singular": "productmodel",
+          "plural": "productmodels"
+        }
+      },
+      "rest": {
+        "enabled": true
+      },
+      "permissions": [
+        {
+          "role": "anonymous",
+          "actions": [
+            {
+              "action": "*"
+            }
+          ]
+        }
+      ]
+    },
+    "productmodelproductdescription": {
+      "source": {
+        "object": "SalesLT.ProductModelProductDescription",
+        "type": "table"
+      },
+      "graphql": {
+        "enabled": true,
+        "type": {
+          "singular": "productmodelproductdescription",
+          "plural": "productmodelproductdescriptions"
+        }
+      },
+      "rest": {
+        "enabled": true
+      },
+      "permissions": [
+        {
+          "role": "anonymous",
+          "actions": [
+            {
+              "action": "*"
+            }
+          ]
+        }
+      ]
+    },
+    "salesorderdetail": {
+      "source": {
+        "object": "SalesLT.SalesOrderDetail",
+        "type": "table"
+      },
+      "graphql": {
+        "enabled": true,
+        "type": {
+          "singular": "salesorderdetail",
+          "plural": "salesorderdetails"
+        }
+      },
+      "rest": {
+        "enabled": true
+      },
+      "permissions": [
+        {
+          "role": "anonymous",
+          "actions": [
+            {
+              "action": "*"
+            }
+          ]
+        }
+      ]
+    },
+    "salesorderheader": {
+      "source": {
+        "object": "SalesLT.SalesOrderHeader",
+        "type": "table"
+      },
+      "graphql": {
+        "enabled": true,
+        "type": {
+          "singular": "salesorderheader",
+          "plural": "salesorderheaders"
         }
       },
       "rest": {
